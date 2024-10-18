@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Quality Education</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #007bff; 
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        nav a:hover {
+            background-color: #0056b3;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .submit {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit:hover {
+            background-color: #218838;
+        }
+
+        .social-icons a {
+            color: #007BFF;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        footer {
+            background-color: #f8f9fa;
+            padding: 10px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 24px;
+            }
+
+            nav {
+                display: flex;
+                flex-direction: column;
+            }
+
+            nav a {
+                margin-bottom: 5px;
+            }
+
+            form {
+                width: 90%;
+            }
+        }
+
+        .whatsappButton {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            padding: 15px;
+            font-size: 25px;
+            text-align: center;
+        }
+        @media (max-width: 480px) {
+            .social-icons a {
+                font-size: 16px;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                padding: 8px;
+                font-size: 14px;
+            }
+            @media (max-width: 768px) {
+            .social-icons a {
+                font-size: 25px;
+            }
+
+            .whatsappButton {
+                font-size: 22px;
+                padding: 10px;
+            }
+        }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Contact Quality Education</h1> 
+   <nav class="navbar">
+    <a href="index.html">HOME</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="about.html">ABOUT</a>
+    <a href="services.html">Services</a>
+    <a href="faqs.html"> FAQs</a>
+    </nav>
+</header>
+
+<section>
+    <form action="submit_form.php" method="POST">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" placeholder="Enter your Name" name="name" required><br><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" placeholder="Enter email address" name="email" required><br><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br><br>
+      <input type="submit" class="submit" value="Submit">
+  </form>
+</section>
+
+<section class="contact_info">
+  <h2>Our Contact Information</h2>
+  <p>Feel free to reach out to us at:</p>
+  <ul>
+      <li>Email: <a href="mailto:info@qualityeducation.org">info@qualityeducation.org</a></li>
+      <li><a href="tel:+256755943973">+256 755943973 </a></li>
+      <li>Address: Wakiso District, Uganda</li>
+  </ul>
+</section>
+
+<section>
+  <p>Follow us on social media to stay updated on our latest projects:</p>
+  <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+</section>      
+<a href="https://api.whatsapp.com/send?phone=256755943973" class="whatsappButton" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+<footer>
+  <p>&copy; 2024 Quality Education. All rights reserved</p>
+</footer>
+</body>
+</html>
